@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arman Naderi — Cloud Security</title>
+  <meta name="description" content="CS Freshman. AWS Certified. Headed into cloud security." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ==================== NAV ==================== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">Arman Naderi</a>
+      <ul class="nav-links">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#credentials">Credentials</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <!-- Hamburger for mobile -->
+      <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile drawer -->
+    <ul class="nav-mobile">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#credentials">Credentials</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section id="hero">
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="hero-content fade-in">
+      <h1 class="hero-name">Arman Naderi</h1>
+      <p class="hero-tagline">
+        CS Freshman. AWS Certified.<br />
+        Headed into cloud security.
+      </p>
+      <p class="hero-meta">George Mason University · Northern Virginia · U.S. Citizen</p>
+      <div class="hero-buttons">
+        <a href="#work" class="btn btn-outline">View My Work</a>
+        <a href="./resume.pdf" class="btn btn-filled" target="_blank" rel="noopener">Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="about-text reveal">
+        <p>I'm a freshman at GMU on a full-ride scholarship.</p>
+        <p>
+          I got AWS certified before my first semester ended —<br />
+          not because I had to, but because I was already building.
+        </p>
+        <p>
+          Based in Northern Virginia. Aiming for cloud security<br />
+          and a clearance before I graduate. This site is the proof of work.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROJECTS ==================== -->
+  <section id="work">
+    <div class="section-inner">
+      <h2 class="section-heading reveal">What I've Built</h2>
+
+      <!-- ==================== PROJECT CARD ==================== -->
+      <!-- ADD NEW PROJECT CARD HERE — copy the block below -->
+      <div class="project-card reveal">
+        <div class="card-number">[ 01 ]</div>
+        <div class="card-body">
+          <div class="card-left">
+            <h3 class="card-title">AWS Infrastructure Health Monitor</h3>
+            <div class="badge-row">
+              <span class="badge">Python</span>
+              <span class="badge">CloudWatch</span>
+              <span class="badge">EC2</span>
+              <span class="badge">IAM</span>
+              <span class="badge">Free Tier</span>
+            </div>
+            <p class="card-desc">
+              Queries AWS CloudWatch APIs to track EC2 health in real time.
+              Automated alerting, threshold baselines, and a full production
+              runbook — built to mirror how it actually works in the field.
+            </p>
+          </div>
+          <div class="card-right">
+            <a href="#" class="btn btn-outline btn-sm" target="_blank" rel="noopener">GitHub</a>
+            <a href="#" class="btn btn-outline btn-sm" target="_blank" rel="noopener">Read Writeup</a>
+          </div>
+        </div>
+      </div>
+      <!-- END PROJECT CARD -->
+
+    </div>
+  </section>
+
+  <!-- ==================== CREDENTIALS ==================== -->
+  <section id="credentials">
+    <div class="section-inner">
+      <h2 class="section-heading reveal">Credentials</h2>
+      <div class="creds-grid">
+
+        <!-- Credential card — reusable -->
+        <div class="cred-card reveal">
+          <div class="cred-icon">AWS</div>
+          <div class="cred-name">AWS Cloud Practitioner</div>
+          <div class="cred-status">Valid Nov 2025–2028</div>
+        </div>
+
+        <div class="cred-card reveal">
+          <div class="cred-icon">GGL</div>
+          <div class="cred-name">Google IT Support</div>
+          <div class="cred-status">Completed</div>
+        </div>
+
+        <div class="cred-card reveal">
+          <div class="cred-icon">SEC</div>
+          <div class="cred-name">CompTIA Security+</div>
+          <div class="cred-status cred-inprogress">In Progress</div>
+        </div>
+
+        <div class="cred-card reveal">
+          <div class="cred-icon">CPR</div>
+          <div class="cred-name">First Aid / CPR</div>
+          <div class="cred-status">Certified</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== RESUME ==================== -->
+  <section id="resume">
+    <div class="section-inner resume-section reveal">
+      <p class="resume-prompt">Want the full picture?</p>
+      <a href="./resume.pdf" class="btn btn-filled" target="_blank" rel="noopener">Download Resume</a>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section id="contact">
+    <div class="section-inner">
+      <h2 class="section-heading reveal">Let's Connect</h2>
+      <div class="contact-links reveal">
+        <a href="mailto:anaderi2006@gmail.com" class="contact-item">
+          <span class="contact-icon">✉</span>
+          anaderi2006@gmail.com
+        </a>
+        <a href="#" class="contact-item" target="_blank" rel="noopener">
+          <span class="contact-icon">in</span>
+          LinkedIn
+        </a>
+        <a href="#" class="contact-item" target="_blank" rel="noopener">
+          <span class="contact-icon">gh</span>
+          GitHub
+        </a>
+      </div>
+      <p class="contact-note reveal">
+        Open to cloud internships, cleared roles, and conversations<br />
+        with people doing interesting things in NoVA.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <p>© 2026 Arman Naderi · Built from scratch · Hosted on Vercel</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
