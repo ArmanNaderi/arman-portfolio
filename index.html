@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Arman Naderi — Cloud Security</title>
-  <meta name="description" content="CS Freshman. AWS Certified. Headed into cloud security." />
+  <meta name="description" content="CS student at George Mason University. AWS certified. Building cloud security detection tooling for the Northern Virginia defense sector." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -44,10 +44,10 @@
     <div class="hero-content fade-in">
       <h1 class="hero-name">Arman Naderi</h1>
       <p class="hero-tagline">
-        CS Freshman. AWS Certified.<br />
-        Headed into cloud security.
+        Cloud security engineer in training.<br />
+        AWS certified. Building detection tooling.
       </p>
-      <p class="hero-meta">George Mason University · Northern Virginia · U.S. Citizen</p>
+      <p class="hero-meta">George Mason University · Northern Virginia · U.S. Citizen · Clearance-Eligible</p>
       <div class="hero-buttons">
         <a href="#work" class="btn btn-outline">View My Work</a>
         <a href="./resume.pdf" class="btn btn-filled" target="_blank" rel="noopener">Download Resume</a>
@@ -59,14 +59,18 @@
   <section id="about">
     <div class="section-inner">
       <div class="about-text reveal">
-        <p>I'm a freshman at GMU on a full-ride scholarship.</p>
         <p>
-          I got AWS certified before my first semester ended —<br />
-          not because I had to, but because I was already building.
+          I'm a Computer Science student at George Mason University
+          on a full-ride scholarship, focused on cloud and cloud security.
         </p>
         <p>
-          Based in Northern Virginia. Aiming for cloud security<br />
-          and a clearance before I graduate. This site is the proof of work.
+          I got AWS certified early and started building — the work below
+          is a serverless security detection pipeline I wrote on AWS, not a
+          tutorial follow-along.
+        </p>
+        <p>
+          Based in Northern Virginia and clearance-eligible, aimed at the
+          defense and government tech ecosystem here. This site is the proof of work.
         </p>
       </div>
     </div>
@@ -78,28 +82,38 @@
       <h2 class="section-heading reveal">What I've Built</h2>
 
       <!-- ==================== PROJECT CARD ==================== -->
-      <!-- ADD NEW PROJECT CARD HERE — copy the block below -->
       <div class="project-card reveal">
         <div class="card-number">[ 01 ]</div>
         <div class="card-body">
           <div class="card-left">
-            <h3 class="card-title">AWS Infrastructure Health Monitor</h3>
+            <h3 class="card-title">AWS Cloud Security Detection Pipeline</h3>
             <div class="badge-row">
               <span class="badge">Python</span>
-              <span class="badge">CloudWatch</span>
-              <span class="badge">EC2</span>
+              <span class="badge">AWS Lambda</span>
+              <span class="badge">Amazon S3</span>
+              <span class="badge">CloudTrail</span>
               <span class="badge">IAM</span>
-              <span class="badge">Free Tier</span>
+              <span class="badge">Serverless</span>
             </div>
             <p class="card-desc">
-              Queries AWS CloudWatch APIs to track EC2 health in real time.
-              Automated alerting, threshold baselines, and a full production
-              runbook — built to mirror how it actually works in the field.
+              A serverless, event-driven pipeline on AWS that monitors account
+              activity logs and automatically flags suspicious or high-risk behavior.
+              CloudTrail records account activity to S3; a new log file triggers a
+              Python Lambda that parses the CloudTrail events, runs six custom
+              detection rules against them, assigns severity levels, and writes
+              structured security reports.
+            </p>
+            <p class="card-desc" style="margin-top:0.8rem;">
+              The six rules span authentication, IAM, privilege escalation, and
+              public-resource exposure: repeated failed console logins from one source,
+              root account usage, high-risk API activity, IAM policy changes tied to
+              privilege escalation, overly permissive IAM policies, and publicly
+              exposed S3 buckets. Analyzes 10,000+ CloudTrail events; fully event-driven,
+              so new logs are analyzed automatically.
             </p>
           </div>
           <div class="card-right">
             <a href="#" class="btn btn-outline btn-sm" target="_blank" rel="noopener">GitHub</a>
-            <a href="#" class="btn btn-outline btn-sm" target="_blank" rel="noopener">Read Writeup</a>
           </div>
         </div>
       </div>
@@ -114,29 +128,22 @@
       <h2 class="section-heading reveal">Credentials</h2>
       <div class="creds-grid">
 
-        <!-- Credential card — reusable -->
         <div class="cred-card reveal">
           <div class="cred-icon">AWS</div>
-          <div class="cred-name">AWS Cloud Practitioner</div>
-          <div class="cred-status">Valid Nov 2025–2028</div>
+          <div class="cred-name">AWS Certified Cloud Practitioner</div>
+          <div class="cred-status">Certified</div>
         </div>
 
         <div class="cred-card reveal">
-          <div class="cred-icon">GGL</div>
-          <div class="cred-name">Google IT Support</div>
-          <div class="cred-status">Completed</div>
+          <div class="cred-icon">ISC2</div>
+          <div class="cred-name">ISC2 Certified in Cybersecurity (CC)</div>
+          <div class="cred-status">Certified</div>
         </div>
 
         <div class="cred-card reveal">
           <div class="cred-icon">SEC</div>
           <div class="cred-name">CompTIA Security+</div>
-          <div class="cred-status cred-inprogress">In Progress</div>
-        </div>
-
-        <div class="cred-card reveal">
-          <div class="cred-icon">CPR</div>
-          <div class="cred-name">First Aid / CPR</div>
-          <div class="cred-status">Certified</div>
+          <div class="cred-status cred-inprogress">Expected Sept 2026</div>
         </div>
 
       </div>
@@ -160,7 +167,7 @@
           <span class="contact-icon">✉</span>
           anaderi2006@gmail.com
         </a>
-        <a href="#" class="contact-item" target="_blank" rel="noopener">
+        <a href="https://www.linkedin.com/in/arman-naderi123/" class="contact-item" target="_blank" rel="noopener">
           <span class="contact-icon">in</span>
           LinkedIn
         </a>
@@ -178,7 +185,7 @@
 
   <!-- ==================== FOOTER ==================== -->
   <footer>
-    <p>© 2026 Arman Naderi · Built from scratch · Hosted on Vercel</p>
+    <p>© 2026 Arman Naderi · Built from scratch</p>
   </footer>
 
   <script src="script.js"></script>
