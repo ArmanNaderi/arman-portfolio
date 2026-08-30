@@ -6,97 +6,81 @@
   <title>Arman Naderi — CS Student · Cloud &amp; Security</title>
   <meta name="description" content="Arman Naderi — Computer Science student at George Mason University building cloud and security tooling. AWS certified. Seeking software, cloud, and security internships in the Northern Virginia tech and defense ecosystem." />
   <link rel="canonical" href="https://armannaderi.com/" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 
-  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Arman Naderi — CS Student · Cloud &amp; Security" />
   <meta property="og:description" content="CS student at George Mason University building cloud and security tooling. AWS certified. Seeking software, cloud, and security internships." />
   <meta property="og:url" content="https://armannaderi.com/" />
   <meta name="twitter:card" content="summary" />
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 
-  <!-- Set theme before paint to avoid flash -->
   <script>
-    (function () {
-      try {
-        var saved = localStorage.getItem('theme');
-        var sys = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-        document.documentElement.setAttribute('data-theme', saved || sys);
-      } catch (e) {}
-    })();
+    (function () { try { var s = localStorage.getItem('theme'); var d = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; document.documentElement.setAttribute('data-theme', s || d); } catch (e) {} })();
   </script>
 
-  <!-- Structured data -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Arman Naderi",
-    "url": "https://armannaderi.com",
-    "jobTitle": "Computer Science Student",
-    "alumniOf": { "@type": "CollegeOrUniversity", "name": "George Mason University" },
-    "knowsAbout": ["Cloud Security", "Amazon Web Services", "Python", "Software Engineering", "Cybersecurity"],
-    "sameAs": [
-      "https://www.linkedin.com/in/arman-naderi123/",
-      "https://github.com/ArmanNaderi"
-    ]
-  }
+  { "@context": "https://schema.org", "@type": "Person", "name": "Arman Naderi", "url": "https://armannaderi.com", "jobTitle": "Computer Science Student", "alumniOf": { "@type": "CollegeOrUniversity", "name": "George Mason University" }, "knowsAbout": ["Cloud Security", "Amazon Web Services", "Python", "Software Engineering", "Cybersecurity"], "sameAs": ["https://www.linkedin.com/in/arman-naderi123/", "https://github.com/ArmanNaderi"] }
   </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- ==================== NAV ==================== -->
   <nav id="nav" aria-label="Primary">
     <div class="nav-inner">
       <a href="/" class="nav-logo"><span class="bracket">[</span> AN <span class="bracket">]</span></a>
       <div class="nav-right">
         <div class="nav-links">
-          <a href="#work">Work</a>
-          <a href="#skills">Skills</a>
-          <a href="#experience">Experience</a>
-          <a href="#credentials">Credentials</a>
-          <a href="#contact">Contact</a>
+          <a href="/" class="current">Home</a>
+          <a href="/resume.html">Resume</a>
+          <a href="/projects.html">Projects</a>
         </div>
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">
           <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
           <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
         </button>
-        <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileNav">
-          <span></span><span></span><span></span>
-        </button>
+        <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileNav"><span></span><span></span><span></span></button>
       </div>
     </div>
     <div class="nav-mobile" id="mobileNav">
-      <a href="#work">Work</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#credentials">Credentials</a>
-      <a href="#contact">Contact</a>
+      <a href="/">Home</a>
+      <a href="/resume.html">Resume</a>
+      <a href="/projects.html">Projects</a>
     </div>
   </nav>
 
   <main id="main">
-    <!-- ==================== HERO ==================== -->
-    <header id="hero">
+    <header class="home-hero">
       <div class="wrap">
         <p class="hero-status"><span class="status-dot" aria-hidden="true"></span> Open to Summer 2027 internships</p>
-        <h1 class="hero-name">Arman Naderi</h1>
-        <p class="hero-line">
-          Computer Science student at <strong>George Mason University</strong> building
-          <strong>cloud and security tooling</strong>. I write code that watches
-          infrastructure for things that shouldn't be happening.
-        </p>
+        <h1 class="hero-name">Hi, I'm Arman</h1>
+        <div class="hero-body">
+          <p>
+            I'm a Computer Science student at George Mason University, on a full-ride scholarship,
+            focused on cloud and cloud security. I got AWS certified early and started building
+            rather than waiting for coursework to catch up.
+          </p>
+          <p>
+            My main project is a serverless security detection pipeline I wrote on AWS — it watches
+            an account's activity logs and flags things that shouldn't be happening. I'm currently
+            building out an enterprise monitoring homelab and studying for CompTIA Security+.
+          </p>
+          <p>
+            My day job is hands-on technical work: I'm a Geek Squad Consultation and Advanced Repair
+            Agent, diagnosing hardware and software problems and handling customer data responsibly.
+            I'm based in Northern Virginia, clearance-eligible, and aimed at the defense and government
+            tech ecosystem here.
+          </p>
+        </div>
         <div class="hero-actions">
-          <a href="#work" class="btn btn-primary">View Work</a>
-          <a href="https://github.com/ArmanNaderi" class="btn btn-ghost" target="_blank" rel="noopener">GitHub</a>
           <a href="https://www.linkedin.com/in/arman-naderi123/" class="btn btn-ghost" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="./resume.pdf" class="btn btn-ghost" target="_blank" rel="noopener">Résumé (PDF)</a>
+          <a href="https://github.com/ArmanNaderi" class="btn btn-ghost" target="_blank" rel="noopener">GitHub</a>
+          <a href="mailto:anaderi2006@gmail.com" class="btn btn-ghost">Email</a>
+          <a href="/resume.html" class="btn btn-primary">Resume</a>
         </div>
         <div class="hero-meta">
           <div><span class="k">Focus</span><span class="v">Cloud · Security · SWE</span></div>
@@ -107,209 +91,20 @@
       </div>
     </header>
 
-    <!-- ==================== ABOUT ==================== -->
-    <section id="about" aria-labelledby="about-h">
+    <section class="home-section" aria-labelledby="writing-h">
       <div class="wrap">
-        <p class="eyebrow">About</p>
-        <h2 id="about-h" class="visually-hidden">About</h2>
-        <div class="about-grid">
-          <p>
-            I'm a CS student on a full-ride scholarship, focused on cloud and cloud security.
-            I got AWS certified early and started building rather than waiting for coursework
-            to catch up — the project below is a serverless detection pipeline I wrote on AWS,
-            not a tutorial follow-along.
-          </p>
-          <p>
-            My day job is hands-on technical work: I'm a Geek Squad Consultation and Advanced
-            Repair Agent, which means diagnosing hardware and software problems, handling
-            customer data responsibly, and explaining technical findings to non-technical people.
-            I'm aiming at the defense and government tech ecosystem in Northern Virginia, and I'm
-            clearance-eligible.
-          </p>
+        <h2 id="writing-h">Writing</h2>
+        <p>Notes on what I'm learning and building — cloud security, certs, and homelab work.</p>
+        <!-- POSTS: when you publish, replace the empty-note below with .post-row entries like:
+        <div class="post-list">
+          <a class="post-row" href="/posts/example.html">
+            <span class="date">Sep 01, 2026</span>
+            <span class="title">Post title here</span>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
         </div>
-      </div>
-    </section>
-
-    <!-- ==================== FEATURED WORK ==================== -->
-    <section id="work" aria-labelledby="work-h">
-      <div class="wrap">
-        <p class="eyebrow">Featured Work</p>
-        <h2 id="work-h">What I've Built</h2>
-
-        <article class="project">
-          <div class="project-head">
-            <p class="project-tag">Serverless · Detection Engineering</p>
-            <h3 class="project-title">AWS Cloud Security Detection Pipeline</h3>
-            <p class="project-summary">
-              A serverless, event-driven pipeline on AWS that monitors account activity logs
-              and automatically flags suspicious or high-risk behavior — no server to run, new
-              logs analyzed the moment they land.
-            </p>
-          </div>
-          <div class="project-body">
-            <div class="stack-row">
-              <span class="chip">Python</span>
-              <span class="chip">AWS Lambda</span>
-              <span class="chip">Amazon S3</span>
-              <span class="chip">CloudTrail</span>
-              <span class="chip">IAM</span>
-              <span class="chip">Event-driven</span>
-            </div>
-
-            <div class="metrics" role="group" aria-label="Project metrics">
-              <div class="metric"><div class="n">10,000+</div><div class="l">CloudTrail events analyzed</div></div>
-              <div class="metric"><div class="n">6</div><div class="l">detection rules</div></div>
-              <div class="metric"><div class="n">4</div><div class="l">threat categories covered</div></div>
-            </div>
-
-            <table class="spec">
-              <caption>Detection ruleset</caption>
-              <thead>
-                <tr>
-                  <th scope="col">ID</th>
-                  <th scope="col">Rule</th>
-                  <th scope="col" class="sev-col">Severity</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr><td class="id">R-01</td><td class="rule">Repeated failed console logins from one source</td><td class="sev-col"><span class="sev sev-med">Medium</span></td></tr>
-                <tr><td class="id">R-02</td><td class="rule">Root account usage</td><td class="sev-col"><span class="sev sev-high">High</span></td></tr>
-                <tr><td class="id">R-03</td><td class="rule">Unusual / high-risk API activity</td><td class="sev-col"><span class="sev sev-med">Medium</span></td></tr>
-                <tr><td class="id">R-04</td><td class="rule">IAM changes tied to privilege escalation</td><td class="sev-col"><span class="sev sev-high">High</span></td></tr>
-                <tr><td class="id">R-05</td><td class="rule">Overly permissive IAM policies</td><td class="sev-col"><span class="sev sev-med">Medium</span></td></tr>
-                <tr><td class="id">R-06</td><td class="rule">Publicly exposed S3 buckets / resources</td><td class="sev-col"><span class="sev sev-high">High</span></td></tr>
-              </tbody>
-            </table>
-
-            <div class="project-actions">
-              <a href="./project-detection-pipeline.html" class="btn btn-primary">Read the full write-up</a>
-              <a href="#" class="btn btn-ghost" target="_blank" rel="noopener">GitHub</a>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- ==================== SKILLS ==================== -->
-    <section id="skills" aria-labelledby="skills-h">
-      <div class="wrap">
-        <p class="eyebrow">Technical Skills</p>
-        <h2 id="skills-h">Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-group">
-            <h3>Languages</h3>
-            <ul class="skill-list">
-              <li>Python</li><li>Java</li><li>C</li><li>SQL</li><li>Bash</li>
-            </ul>
-          </div>
-          <div class="skill-group">
-            <h3>Cloud &amp; Security</h3>
-            <ul class="skill-list">
-              <li>AWS Lambda</li><li>Amazon S3</li><li>CloudTrail</li><li>IAM</li><li>Serverless</li><li>Threat detection</li>
-            </ul>
-          </div>
-          <div class="skill-group">
-            <h3>Systems &amp; Tools</h3>
-            <ul class="skill-list">
-              <li>Linux</li><li>Git</li><li>Windows diagnostics</li><li>JSON log parsing</li>
-            </ul>
-          </div>
-          <div class="skill-group learning">
-            <h3>Currently Learning</h3>
-            <ul class="skill-list">
-              <li>SIEM concepts</li><li>Incident response</li><li>Networking</li><li>Security automation</li>
-            </ul>
-          </div>
-        </div>
-        <p class="skills-note">Dashed items are areas I'm actively studying, not claiming as strengths.</p>
-      </div>
-    </section>
-
-    <!-- ==================== EXPERIENCE ==================== -->
-    <section id="experience" aria-labelledby="exp-h">
-      <div class="wrap">
-        <p class="eyebrow">Experience</p>
-        <h2 id="exp-h">Where I've Worked</h2>
-
-        <div class="entry">
-          <div class="entry-meta">
-            <span class="role">Consultation &amp; Advanced Repair Agent</span>
-            2026 — Present
-          </div>
-          <div>
-            <h3>Geek Squad — Best Buy · Sterling, VA</h3>
-            <ul class="bullets">
-              <li>Diagnose hardware and software failures across Windows systems and consumer devices, then explain findings clearly to non-technical customers.</li>
-              <li>Handle customer data and devices under strict privacy and data-handling standards.</li>
-              <li>Act as shift lead, coordinating workflow and coverage on the floor.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="entry">
-          <div class="entry-meta">
-            <span class="role">Shift Lead — Electronics</span>
-            Prior
-          </div>
-          <div>
-            <h3>Target · Electronics Department</h3>
-            <ul class="bullets">
-              <li>Led the electronics department, handling product knowledge, troubleshooting, and team coordination during shifts.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="entry">
-          <div class="entry-meta">
-            <span class="role">Lead Lifeguard</span>
-            Summer 2023
-          </div>
-          <div>
-            <h3>High Sierra Pools · Loudoun County, VA</h3>
-            <ul class="bullets">
-              <li>Lead lifeguard responsible for safety oversight, response readiness, and coordinating other guards.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================== CREDENTIALS ==================== -->
-    <section id="credentials" aria-labelledby="cred-h">
-      <div class="wrap">
-        <p class="eyebrow">Credentials</p>
-        <h2 id="cred-h">Certifications &amp; Education</h2>
-        <div class="two-col">
-          <div>
-            <h3>Certifications</h3>
-            <div class="stack-list">
-              <div class="stack-item"><span class="name">AWS Certified Cloud Practitioner</span><span class="status">Certified</span></div>
-              <div class="stack-item"><span class="name">ISC2 Certified in Cybersecurity (CC)</span><span class="status">Certified</span></div>
-              <div class="stack-item"><span class="name">CompTIA Security+</span><span class="status pending">Expected Sept 2026</span></div>
-            </div>
-          </div>
-          <div>
-            <h3>Education</h3>
-            <div class="stack-list">
-              <div class="stack-item"><span class="name">B.S. Computer Science<br><span style="color:var(--ink-faint);font-size:var(--step--1)">George Mason University · Full-ride scholarship</span></span><span class="status">2025 — 2029</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================== CONTACT ==================== -->
-    <section id="contact" aria-labelledby="contact-h">
-      <div class="wrap">
-        <p class="eyebrow">Contact</p>
-        <h2 id="contact-h">Let's Talk</h2>
-        <p>Open to software, cloud, and security internships, and to conversations with people building interesting things in NoVA.</p>
-        <div class="contact-links">
-          <a href="mailto:anaderi2006@gmail.com" class="btn btn-primary">anaderi2006@gmail.com</a>
-          <a href="https://github.com/ArmanNaderi" class="btn btn-ghost" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://www.linkedin.com/in/arman-naderi123/" class="btn btn-ghost" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="./resume.pdf" class="btn btn-ghost" target="_blank" rel="noopener">Résumé (PDF)</a>
-        </div>
+        -->
+        <div class="empty-note">First post coming soon — starting with the build log for the monitoring homelab.</div>
       </div>
     </section>
   </main>
